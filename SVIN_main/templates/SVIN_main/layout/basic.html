@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Добро пожаловать на сервер SVIN</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="{% static "SVIN_main/style.css" %}">
+</head>
+<body>
+	<div class="hat_and_nav">
+		<nav class="nav">
+			<a href="{% url "index" %}" class="button">ГЛАВНАЯ</a>
+			<a href="{% url "news" %}" class="button">НОВОСТИ</a>
+			<a href="{% url "rules" %}" class="button">ПРАВИЛА</a>
+			<a href="{% url "contacts" %}" class="button">КОНТАКТЫ</a>
+			<a href="{% url "reviews" %}" class="button">ОТЗЫВЫ</a>
+			<div class="login">
+				{% if request.user.is_authenticated %}
+				<span style="color: white; text-align : center"><b>{{ request.user.username }} </b></span>
+				<hr>
+				<a class="buttonr" href="{% url "logout" %}">Выйти</a>
+				{% else %}
+				<a class="buttonr" href="{% url "register" %}">Регистрация</a>
+				<hr>
+				<a class="buttonr" href="{% url "login" %}">Войти</a>
+				{% endif %}
+			</div>
+		</nav>
+	</div>
+	<section>
+	{% block content %}
+	{% endblock content %}
+	</section>
+</body>
+</html>

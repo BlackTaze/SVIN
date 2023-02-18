@@ -1,0 +1,11 @@
+{% extends 'SVIN_main/layout/basic.html' %}
+{% block content %}
+<div class="register glass">
+	<h2> Регистрация </h2>
+	<form  method="post">
+		{% csrf_token %}
+		{{ form.as_p }}
+		<button class="button" type="submit">Войти</button>
+	</form>
+</div>
+{% endblock content %}

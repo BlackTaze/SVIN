@@ -1,0 +1,29 @@
+{% extends 'SVIN_main/layout/basic.html' %}
+{% load static %}
+{% block content %}
+<header>
+	<h1 style="color: rgb(177, 96, 180); font-size: 40px" align="center">КОНТАКТЫ:</h1>
+</header>
+<div class="contactscontainer">
+	<div class="contactitem glass">
+		<h2>Главный разработчик:</h2>
+		<img align="center" height="100px" width="150px" src="{% static "SVIN_main/berserk.jpg" %}"></img><br><br><br>
+		<span><b>BlackTaze</b></span><br>
+		<span><b>Отвечает за разработку и поддержку сайта</b></span>
+	</div>
+	
+	<div class="contactitem glass">
+		<h2>Главный дизайнер/Зам.сервера:</h2>
+		<img align="center" height="100px" width="100px" src="{% static "SVIN_main/diabread.jpg" %}"></img><br><br>
+		<span><b>Diabread</b></span><br>
+		<span><b>Дизайнер/Зам.сервера</b></span>
+	</div>
+	
+	<div class="contactitem glass">
+		<h2>Владелец сервера:</h2><br>
+		<img align="center" height="100px" width="100px" src="{% static "SVIN_main/gosha.jpg" %}"></img><br><br><br>
+		<span><b>Гошан</b></span><br>
+		<span><b>Владелец сервера</b></span>
+	</div>
+</div>
+{% endblock content %}

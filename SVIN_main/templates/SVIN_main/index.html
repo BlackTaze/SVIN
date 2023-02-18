@@ -1,0 +1,39 @@
+{% extends 'SVIN_main/layout/basic.html' %}
+{% block content %}
+	<div align="center" class="container">
+			<div class="itemrules glass">
+			<h2>Правила</h2>
+			<span class="rulesmain"> {{ rules.content | safe }} </span><br>
+				
+				<a href="{% url "rules" %}" class="more">Подробнее</a>
+		</div>
+		<div class="itemnews glass">
+			<h2>Новости</h2>
+			<p>
+				{{ news_last.content |safe }}
+				
+				<a href="{% url "news" %}" class="more">Подробнее</a>	
+			</p>
+				
+		</div>
+		<div class="discord">
+			<iframe src="https://discord.com/widget?id=469460755595395072&theme=dark" 
+			width="350" height="500" allowtransparency="true" frameborder="0" 
+			sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+			</iframe>
+		</div>
+	
+		<div class="about glass">
+			<h3>О нас</h3>
+			<p>
+				🐖 Играем в разные игры, общаемся, смотрим фильмы, всё время онлайн! 🐖<br>
+				🐖 Всегда рады новичкам! Общаемся на разные темы, играем в различные игры. 🐖<br>
+				🐖 Занимаемся изменениями и доработками сервера! Добрый Зам.Сервера всегда ответит на ваш вопрос. 🐖<br>
+				🐖 Здесь ты сможешь найти компанию по душам, развлечься и просто отдохнуть после трудного дня. 🐖
+			</p>
+		</div>
+		<div class="buttonbox">
+			<a class="button" href="" >Присоединиться</a>
+		</div>
+	</div>
+{% endblock content %}

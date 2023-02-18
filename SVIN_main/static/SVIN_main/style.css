@@ -1,0 +1,339 @@
+
+
+body{
+	background-image: url(svinbackground.jpg);
+}
+
+/* MAIN */
+.logo{
+	height: 100px;
+	width: 200px;
+}
+
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around ;
+	gap: 10px;
+	padding: 20px;
+	
+
+
+}
+
+.itemrules , .itemnews
+{
+	color: white;
+	border: 10px solid brown;
+	height: 500px;
+	width: 350px;
+	font-family: monospace;
+	font-size: 15px;
+	transition: transform 0.3s ease-in-out;
+	
+}
+.itemrules:hover{
+		transform: scale(1.05); /* increase size */
+}
+.itemnews:hover{
+	transform: scale(1.05); /* increase size */
+
+}
+.about{
+	background-color: gray;
+	border: 10px solid brown;
+	height: 300px;
+	color: white;
+	font-family: monospace;
+	font-size: 20px;
+	background-image: url(svinbackground.jpg);
+	transition: transform 0.3s ease-in-out;
+}
+
+.about:hover{
+	transform: scale(1.05);
+}
+
+.discord{
+	transition: transform 0.3s ease-in-out;
+
+}
+
+
+.discord:hover{
+	transform: scale(1.05);
+}
+
+
+.button{
+	font-size: 20px;
+	font-family: monospace;
+	text-decoration: none;
+	color: white;
+	background: linear-gradient(to left, #ad5389,#3c1053,#ad5389);
+	padding: 20px 60px;
+	border-radius: 10px;
+	background-size: 200%;
+	transition: 0.5s;
+	
+}
+
+.button:hover{
+	background-position: right;
+	color: black;
+}
+
+
+
+.buttonr{
+	font-size: 13px;
+	font-family: monospace;
+	text-decoration: none;
+	color: white;
+	background: linear-gradient(to left, #ad5389,#3c1053,#ad5389);
+	padding: 7px 20px;
+	border-radius: 10px;
+	background-size: 200%;
+	transition: 0.5s;
+	text-align: center;
+	
+}
+
+
+.buttonr:hover{
+	background-position: right;
+	color: black;
+}
+
+.buttonbox{
+	align-self: center;
+}
+
+
+
+.hat{
+	border: 10px solid black;
+}
+
+.glass{
+	background: linear-gradient(135deg,rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0));
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.hat_and_nav{
+	display: flex;
+	justify-content: flex-end;
+	gap: 20px;
+	align-items: center;
+	padding: 20px;
+	background-image: url(svinhat.jpg);
+	border-radius: 25px;
+	height: 100px;
+	
+
+	
+	
+	
+}
+
+.nav{
+	display: flex;
+	gap: 20px
+}
+
+.more{
+	text-decoration: none;
+	color: pink;
+}
+
+/* MAIN */
+
+/* NEWS */
+
+.newscontainer{
+	display: flex;
+	flex-wrap: wrap;
+
+	justify-content: center;
+	gap: 20px;
+	width: 1000px;
+	position: absolute;
+	left: 250px;
+	
+}
+
+.newsitem{
+
+	font-family: monospace;
+	font-size: 20px;
+	color: white;
+	width: 450px;
+	min-height: 300px;
+
+
+}
+
+header{
+	font-family: monospace;
+	font-size: 30px;
+	color: white;
+}
+
+.paginator{
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 10px;
+	padding: 20px;
+	position: absolute;
+	bottom: 0;
+	left: 150px;
+	
+
+	
+}
+
+.paginatoritem{
+	padding: 12px;
+	border-color: 10px solid plum;
+	text-decoration: none;
+	color: aliceblue;
+	text-align: center;
+	
+	
+
+}
+
+.news_and_pagin{
+	
+	border: 10px solid black;
+}
+
+
+/* NEWS */
+
+/* RULES */
+.rulescontainer{
+	display: flex;
+	flex-wrap: nowrap;
+	position: absolute;
+	left: 90px;
+	gap: 20px;
+	padding: 10px;
+}
+
+.rules{
+
+	
+		padding: 20px;
+		margin-bottom: 20px;
+		box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+		transition: transform 0.3s ease-in-out;
+		font-size: 20px;
+  		text-align: center;
+  		margin-bottom: 30px;
+  		letter-spacing: 2px;
+		color: white;
+
+	
+}
+.rules:hover{
+	transform: translateY(-5px);
+}
+
+.rulesmain{
+	display: -webkit-box;
+    max-width: 350px;
+    -webkit-line-clamp: 20;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+	
+}
+
+/* Contacts */
+
+.contactscontainer{
+	display: flex;
+	flex-wrap: nowrap;
+	font-family: monospace;
+	font-size: 15px;
+	gap: 20px;
+	padding: 20px;
+	justify-content: center;
+}
+
+.contactitem{
+	height: 400px;
+	width: 400px;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+}
+/* Contacts */
+
+
+/* Registration */
+
+
+.register{
+	position: absolute;
+	top: 200px;
+	left: 200px;
+	color: white;
+	font-family: monospace;
+	width: 500px;
+	min-height: 300px;
+	font-size: 20px;
+	text-align: center;
+}
+
+/* Registration */
+
+/* reviews */
+
+.review {
+	background: linear-gradient(to bottom right, #a35cff, #7546e2);
+	border: 1px solid black;
+	border-radius: 4px;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	transition: box-shadow 0.3s ease-in-out;
+	font-family: 'Montserrat', sans-serif; /* set the font family */
+  }
+  
+  .review:hover {
+	box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+	transform: translateY(-2px);
+  }
+  
+  .review h3 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #333;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+  }
+  
+  .review p {
+	font-size: 16px;
+	line-height: 1.5;
+	color: black;
+	margin-bottom: 10px;
+  }
+
+.reviewcreate{
+	position: absolute;
+	width: 600px;
+	height: 400px;
+	align-items: center;
+	color: white;
+	text-align: left;
+}	
+
+/* reviews */
+

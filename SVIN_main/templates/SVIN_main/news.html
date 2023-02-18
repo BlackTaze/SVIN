@@ -1,0 +1,25 @@
+{% extends 'SVIN_main/layout/basic.html' %}
+{% block content %}
+		<header align="center">
+			<h1 style="color: rgb(177, 96, 180); font-size: 40px" >НОВОСТИ СЕРВЕРА:</h1>
+		</header>	
+			<div align="center" class="newscontainer">
+			{% for new in page %}
+				<div class="newsitem glass">
+					<span>
+					{{ new.title }}
+					{{ new.content | safe }}<br><br>	
+					Опубликовано: {{ new.published }}
+					</span>
+				</div>
+				{% endfor %}
+			</div>
+				<div class="paginator ">
+					{% for p in page.paginator.page_range %}
+					<a class="paginatoritem button" href="?page={{ p }}"> {{ p }} </a>
+					{% endfor %}
+				</div>
+		
+
+
+{% endblock content %}

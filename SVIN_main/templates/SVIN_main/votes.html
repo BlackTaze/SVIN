@@ -1,0 +1,13 @@
+{% extends 'SVIN_main/layout/basic.html' %}
+{% block content %}
+<h1 style="color: rgb(177, 96, 180); font-size: 40px" align="center">ОТЗЫВЫ</h1>
+{% for review in reviews %} 
+	<div class="review glass">
+    	<h3>{{ review.title }}(от {{ review.user.username }})</h3>
+    	<p>{{ review.content }}</p>
+	</div>
+{% endfor %}
+<br>
+<br>
+<a href="{% url "submit_review" %}" class="button"> Оставить отзыв (<font color="red">Вы должны быть авторизированы!!!</font>)</a>
+{% endblock content %}

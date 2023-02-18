@@ -1,0 +1,12 @@
+{% extends 'SVIN_main/layout/basic.html' %}
+{% block content %}
+  
+<h1 align="center" style="color: rgb(177, 96, 180); font-size: 40px">Создать отзыв</h1>
+<div class="glass reviewcreate">
+<form c method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button  type="submit" class="button">Добавить</button>
+  </form>
+<div>
+{% endblock %}
